@@ -1,0 +1,145 @@
+/* colors */
+:root {
+    --black: #0000000;
+    --catalina: #06327d;
+    --bluetiful: #2b70e4;
+    --vegan: #209d5c;
+    --sunglow: #ffd034;
+    --white: #ffff;
+    --light-blue: #CADBF8;
+    --poppins: "Poppins", sans-serif;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1 {
+    font-family: var(--poppins);
+    font-size: 3rem;
+    line-height: 1.1667;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: var(--poppins);
+    font-size: 2.5rem;
+    line-height: 1.1667;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: var(--poppins);
+    font-size: 1.75rem;
+    line-height: 1.1667;
+    font-weight: normal;
+}
+body {
+    font-family: var(--poppins);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: var(--catalina);
+}
+
+/* mobile first */
+header {
+    color: var(--white);
+    border-bottom: solid .5rem var(--sunglow);
+    padding-top: 1rem;
+}
+img {
+    /* the hero image isn't styled with rounded corners */
+    border-radius: .5rem;
+}
+.title {
+    display: flex;
+    /* this was useful here */
+    justify-content: space-around;
+}
+.title h1 {
+    /* this was useful here */
+    white-space: nowrap;
+    padding-top: 2rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.button {
+    color: var(--white);
+    background-color: var(--catalina);
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--white);
+}
+.hero img  {
+    grid-row: 1/4;
+    width: 90%;
+    padding: 1rem;
+}
+.hero .button {
+    background-color: var(--vegan);
+}
+
+.our-coffee {
+    background-color: var(--light-blue);
+    padding: 1rem;
+}
+.card {
+    padding-bottom: 1rem;
+}
+.card img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+/* tablet */
+@media (min-width: 650px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+/* desktop */
+@media (min-width: 1000px) {
+    main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    footer {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    header {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+/* footer */
+footer {
+    border-top: solid .5rem var(--sunglow);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
