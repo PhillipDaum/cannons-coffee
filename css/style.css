@@ -44,6 +44,10 @@ body {
 }
 
 /* mobile first */
+.thingy {
+    max-width: 1200px;
+    margin: auto;
+}
 header {
     color: var(--white);
     border-bottom: solid .5rem var(--sunglow);
@@ -56,7 +60,8 @@ img {
 .title {
     display: flex;
     /* this was useful here */
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1rem;
 }
 .title h1 {
     /* this was useful here */
@@ -73,6 +78,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--white);
+    text-transform: uppercase;
 }
 
 .button {
@@ -88,9 +94,9 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--white);
+    align-items: center;
 }
 .hero img  {
-    grid-row: 1/4;
     width: 90%;
     padding: 1rem;
 }
@@ -118,6 +124,10 @@ nav a {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
+    .hero img {
+        padding: 0;
+        border-radius: 0;
+    }
 }
 
 /* desktop */
@@ -133,6 +143,9 @@ nav a {
     header {
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
