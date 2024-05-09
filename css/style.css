@@ -112,7 +112,7 @@ nav a {
     padding-bottom: 1rem;
 }
 .card img {
-    display: block;
+    /* display: block; */
     width: 100%;
     margin: auto;
 }
