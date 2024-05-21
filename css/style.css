@@ -143,6 +143,13 @@ nav a {
     header {
         margin-left: 2rem;
         margin-right: 2rem;
+        padding-bottom: 1rem;
+        /* Header fix here */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header ul {
+        padding-top: 2.1rem;
     }
     .wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr;
