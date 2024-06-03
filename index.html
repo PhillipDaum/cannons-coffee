@@ -12,7 +12,9 @@
     <div class="thingy">
         <header>
             <div class="title">
-                <img src="img/logo-nav.png" alt="a stylized green coffeebean with leaves with the words beans of joy">
+                <div>
+                    <img src="img/logo-nav.png" alt="a stylized green coffeebean with leaves with the words beans of joy">
+                </div>
                 <h1 class="store">Cannons Coffee</h1>
             </div>
             <!-- hacky way to restyle hamburer menu cuz of 'title' flexbox -->
@@ -26,9 +28,11 @@
                     <li><a href="mailto:phil@anniecannons.com" target="" class="email-button">Contact</a></li>
                 </ul>
             </nav>
-            <button onclick="showHamburger()" class="burger">
-                <i class="fa fa-bars"></i>
-            </button>
+            <div class="burger">
+                <button onclick="showHamburger()">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
         </header>
         <main>
             <!-- hero image -->
