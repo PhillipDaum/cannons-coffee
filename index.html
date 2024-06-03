@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cannons Coffee</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
+    <!-- name better next time -->
     <div class="thingy">
         <header>
             <div class="title">
                 <img src="img/logo-nav.png" alt="a stylized green coffeebean with leaves with the words beans of joy">
-                <h1>Cannons Coffee</h1>
+                <h1 class="store">Cannons Coffee</h1>
             </div>
+            <!-- hacky way to restyle hamburer menu cuz of 'title' flexbox -->
+            <h1 class="shopname">Cannons Coffee</h1>
             <nav>
-                <ul>
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="latte.html">Coffee</a></li>
                     <li><a href="https://www.modcoffeehouse.com/" target="_blank">About</a></li>
@@ -22,6 +26,9 @@
                     <li><a href="mailto:phil@anniecannons.com" target="" class="email-button">Contact</a></li>
                 </ul>
             </nav>
+            <button onclick="showHamburger()" class="burger">
+                <i class="fa fa-bars"></i>
+            </button>
         </header>
         <main>
             <!-- hero image -->
@@ -69,5 +76,6 @@
             <p>&copy; 2024 Cannons Coffee. All Rights Reserved</p>
         </footer> 
     </div>
+<script src="js/index.js"></script>
 </body>
 </html>

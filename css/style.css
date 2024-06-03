@@ -43,6 +43,11 @@ body {
     background-color: var(--catalina);
 }
 
+/* hacky H1 */
+.shopname {
+    display: none;
+}
+
 /* mobile first */
 .thingy {
     max-width: 1200px;
@@ -112,9 +117,15 @@ nav a {
     padding-bottom: 1rem;
 }
 .card img {
-    /* display: block; */
     width: 100%;
     margin: auto;
+}
+/* footer */
+footer {
+    border-top: solid .5rem var(--sunglow);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
 }
 
 /* tablet */
@@ -129,7 +140,6 @@ nav a {
         border-radius: 0;
     }
 }
-
 /* desktop */
 @media (min-width: 1000px) {
     main {
@@ -156,10 +166,59 @@ nav a {
     }
 }
 
-/* footer */
-footer {
-    border-top: solid .5rem var(--sunglow);
-    color: var(--white);
+/* hamburger menu */
+.burger {
+    font-size: 1.2em;
+    display: none;
+}
+@media (max-width: 650px) {
+  .burger{
+    display: block;
+  } 
+  .store {
+    display: none;
+  }
+  .nav {
+    margin: 0;
+    background: var(--bluetiful);
+    position: absolute;
+    right: -100%;
+    /* box top is not pixel perfrect but good for now */
+    top: 183px;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100% - 70px);
+    padding: 0;
+    transition: all 400ms;
+  }
+  /* This works, but it's not pretty, I'll circle back. Thinking to push the cannon's coffee h1 below logo*/
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  header button {
+    margin: 1rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .store  {
+    display: none;
+  }
+  .shopname {
+    display: flex;
+    justify-content: center;
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  .nav li {
+    padding-left: 1rem;
+  }
+  .nav-active {
+    right: 0;
+  }
+  .navlink {
     text-align: center;
-    padding: 1rem;
+  }
 }
