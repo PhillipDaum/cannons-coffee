@@ -65,12 +65,10 @@ img {
 }
 .title {
     display: flex;
-    /* this was useful here */
     justify-content: center;
     gap: 1rem;
 }
 .title h1 {
-    /* this was useful here */
     white-space: nowrap;
     padding-top: 2rem;
 }
@@ -165,13 +163,15 @@ fieldset {
 .user-info input {
     width: 60%;
 }
-.checkbox-wrapper {
+.comment-area {
     display: flex;
-    flex-direction: column;
+    width: 90%;
+    margin: auto;
 }
 .submit-button {
     display: block;
     margin: auto;
+    font-size: 1rem;
     background-color: var(--catalina);
     color: var(--white);
     border: none;
