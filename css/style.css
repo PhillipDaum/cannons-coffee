@@ -1,3 +1,6 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* colors */
 :root {
     --black: #0000000;
@@ -9,9 +12,6 @@
     --light-blue: #CADBF8;
     --poppins: "Poppins", sans-serif;
 }
-
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 h1 {
     font-family: var(--poppins);
@@ -34,6 +34,12 @@ h3 {
     line-height: 1.1667;
     font-weight: normal;
 }
+h4 {
+    font-family: var(--poppins);
+    font-size: 1.2rem;
+    line-height: 1.1667;
+    font-weight: normal;
+}
 body {
     font-family: var(--poppins);
     font-size: 1.125rem;
@@ -44,7 +50,7 @@ body {
 }
 
 /* mobile first */
-.thingy {
+.content-wrapper {
     max-width: 1200px;
     margin: auto;
 }
@@ -120,7 +126,58 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+/* hamburger menu */
+.burger {
+    font-size: 1.2em;
+    display: none;
+}
 
+/* contact form */
+.contact-wrapper h3 {
+    color: var(--white);
+    text-align: center;
+}
+.contact-wrapper h4 {
+    color: var(--white);
+    text-align: center;
+}
+.form-wrapper {
+    background-color: var(--white);
+    color: var(--catalina);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.form-wrapper p {
+    font-size: .8rem;
+}
+fieldset {
+    border: none;
+}
+.name-and-email {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+.user-info input {
+    width: 60%;
+}
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.submit-button {
+    display: block;
+    margin: auto;
+    background-color: var(--catalina);
+    color: var(--white);
+    border: none;
+    border-radius: .25rem;
+    padding: .25rem;
+}
 /* tablet */
 @media (min-width: 650px) {
     .wrapper {
@@ -131,6 +188,9 @@ footer {
     .hero img {
         padding: 0;
         border-radius: 0;
+    }
+    .form-wrapper {
+        width: 70%;
     }
 }
 /* desktop */
@@ -157,12 +217,9 @@ footer {
     .wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-}
-
-/* hamburger menu */
-.burger {
-    font-size: 1.2em;
-    display: none;
+    .form-wrapper {
+        width: 40%;
+    }
 }
 @media (max-width: 650px) {
   .burger{

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannons - Latte</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <div>
+                <img src="img/logo-nav.png" alt="a stylized green coffeebean with leaves with the words beans of joy">
+            </div>
+            <h1 class="store">Cannons Coffee</h1>
+            <div class="burger">
+                <button onclick="showHamburger()">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="latte.html">Coffee</a></li>
+                <!-- links to a favorite coffeshop -->
+                <li><a href="https://www.modcoffeehouse.com/" target="_blank">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- contact -->
+        <div class="contact-wrapper">
+            <h3>We would love to hear from you!</h3>
+            <h4>please fill out the form below and we will get back to you within 72 hours</h4>
+            <div class="form-wrapper">
+                <p>*required</p>
+                <form action="">
+                    <fieldset class="user-info">
+                        <div class="name-and-email">
+                            <label for="name">Name*:</label>
+                            <input type="text" id="name" name="name" minlength="1" maxlength="25" required>
+                        </div>
+                        <div class="name-and-email">
+                            <label for="email">Email*:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="how-can-we-help">
+                        <legend>How can we help?</legend>
+                        <div class="checkboxes">
+                            <input type="checkbox" id="employment" name="employment" value="employment">
+                            <label for="employment">Employment</label>
+                        </div>
+                        <div class="checkboxes">
+                            <input type="checkbox" id="wholesale-coffee" name="wholesale-coffee"
+                                value="wholesale-coffee">
+                            <label for="wholesale-coffee">Wholesale Coffee</label>
+                        </div>
+                        <div class="checkboxes">
+                            <input type="checkbox" id="art-shows" name="art-shows" value="art-shows">
+                            <label for="art-shows">Art Shows</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="comment">Comment</label>
+                        <!-- set size with rows and cols -->
+                        <div>
+                            <textarea name="comment" id="comment" rows="" cols=""></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="submit" class="submit-button">
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/logo-footer.png" alt="cannons coffee logo">
+        <p>&copy; 2024 Cannons Coffee. All Rights Reserved</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
